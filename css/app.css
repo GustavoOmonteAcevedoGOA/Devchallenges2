@@ -113,6 +113,18 @@ main.contenedor {
     align-items: center;
 }
 
+@media (min-width: 480px) {
+    main.contenedor {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 950px) {
+    main.contenedor {
+        justify-content: space-between;
+    }
+}
+
 .box {
     flex: 0 0 calc(50% - 1rem);
     display: flex;
@@ -123,7 +135,7 @@ main.contenedor {
 
 @media (min-width: 480px) {
     .box {
-        flex: 0 0 calc(50% - 2rem);
+        flex: 0 0 calc(36% - 1rem);
         height: 38.5%;
     }
 }
@@ -144,6 +156,7 @@ main.contenedor {
 @media (min-width: 480px) {
     .box:nth-child(2n+2) {
         justify-content: flex-end;
+        margin-left: 5%;
     }
 }
 
@@ -152,6 +165,7 @@ main.contenedor {
         justify-content: unset;
         align-items: unset;
         margin-right: 0;
+        margin-left: 0;
     }
     .box:nth-child(3n+2) {
         align-items: center;
