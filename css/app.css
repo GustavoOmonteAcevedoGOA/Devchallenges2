@@ -167,6 +167,20 @@ main.contenedor {
 }
 
 @media (min-width: 480px) {
+    .box:nth-child(2n+2) .box__imagen {
+        margin-left: calc(7% + 0.5rem + (5% - 0.5rem));
+        margin-right: calc(7% + 0.5rem - (5% - 0.5rem));
+    }
+}
+
+@media (min-width: 950px) {
+    .box:nth-child(2n+2) .box__imagen {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 480px) {
     .box .box__imagen {
         width: 18.8rem;
     }
